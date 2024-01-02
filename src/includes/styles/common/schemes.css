@@ -1,0 +1,24 @@
+:root {
+    --accent: hsl(170, 83%, 33%);
+    --error: hsl(0, 100%, 46%);
+    --default-selection-background: hsla(170, 83%, 33%, 0.1);
+    --error-selection-background: hsla(0, 100%, 46%, 0.1);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary-background: hsl(0, 0%, 100%);
+        --secondary-background: hsl(0, 0%, 92%);
+        --primary-foreground: hsl(0, 0%, 0%);
+        --secondary-foreground: hsl(0, 0%, 40%);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-background: hsl(0, 0%, 0%);
+        --secondary-background: hsl(0, 0%, 8%);
+        --primary-foreground: hsl(0, 0%, 100%);
+        --secondary-foreground: hsl(0, 0%, 50%);
+    }
+}

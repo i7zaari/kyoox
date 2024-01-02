@@ -1,0 +1,430 @@
+-
+    const websites = [
+        {
+            url: `https://yewtu.be/`,
+            search: `search?q=`,
+            name: `Invidious`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Invidious"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <rect x="-.0072516" y=".00056299" width="512.01" height="512.02" fill="#575757" stroke-width=".063019"/>
+                        <path d="m247.17 455.95c-19.792-0.78921-38.719-4.2564-57.154-10.47-60.968-20.55-108.68-68.579-127-127.86-7.8955-25.538-10.062-53.943-6.2586-82.067 3.7105-27.439 13.603-53.515 29.342-77.344 12.069-18.273 29.138-36.277 47.228-49.816 36.891-27.61 85.944-42.49 132.38-40.157 25.88 1.3001 49.939 6.765 73.106 16.606 8.1948 3.481 20.024 9.6845 27.696 14.525 14.15 8.9272 22.367 15.498 34.482 27.573 13.254 13.211 22.128 24.276 30.398 37.906 7.2081 11.879 14.099 27.15 18.229 40.397 1.5996 5.1305 4.442 16.456 5.6852 22.653 2.3908 11.917 2.6998 15.722 2.7049 33.312 6e-3 18.515-0.46256 24.413-2.9166 36.758-9.3274 46.92-35.58 88.167-74.872 117.64-22.814 17.112-50.027 29.535-78.547 35.858-16.714 3.7059-35.421 5.2453-54.498 4.4846zm-35.1-78.786c-5.3e-4 -0.52647-0.0741-2.0564-0.16311-3.3999l-0.16178-2.4427-4.7018-0.26271c-4.0477-0.22614-4.7968-0.33363-5.3847-0.77253-2.0235-1.5108-1.4679-6.0695 2.2494-18.457 0.8637-2.8781 3.3371-11.321 5.4966-18.762 2.1594-7.4409 5.2002-17.836 6.7573-23.101 1.5571-5.2648 4.1948-14.282 5.8615-20.038 1.6667-5.7562 3.6145-12.4 4.3284-14.764 0.71391-2.3641 3.2583-11.037 5.6542-19.272 4.9475-17.007 8.1626-27.723 8.9438-29.811 0.51852-1.3858 0.54785-1.4139 0.99761-0.95317 0.25486 0.26106 3.8462 7.3667 7.9807 15.79 4.1345 8.4236 13.089 26.573 19.898 40.331 17.188 34.73 37.849 76.578 43.261 87.622l4.5356 9.257 11.359-0.0895c6.2475-0.0492 11.615-0.19623 11.929-0.32672 0.5614-0.23385 0.54167-0.2959-1.3723-4.3176-1.068-2.2442-8.1436-16.601-15.724-31.904-48.687-98.293-61.22-123.86-67.889-138.48-4.7022-10.309-6.9031-14.807-7.7139-15.762-0.82931-0.97742-1.6319-1.0638-2.3704-0.25525-1.1993 1.313-4.1046 10.063-9.3869 28.27-2.0569 7.0899-6.5372 22.425-9.9562 34.077-6.6396 22.629-8.5182 29.037-14.33 48.883-2.0354 6.9495-4.7977 16.369-6.1385 20.931-1.3408 4.5628-4.033 13.81-5.9826 20.549-4.304 14.877-6.136 20.889-7.3886 24.25-2.1371 5.7334-2.5723 6.3292-4.9216 6.7384-0.88855 0.15472-2.4102 0.28196-3.3815 0.28275-2.1993 3e-3 -3.5494 0.36339-4.0558 1.0863-0.42176 0.60215-0.56421 4.8802-0.18251 5.4812 0.20573 0.32388 2.4672 0.37414 23.34 0.51873l8.6151 0.0597-7e-4 -0.95723zm36.751-205.59c4.3282-0.92335 8.4607-4.943 9.4374-9.1796 0.36569-1.5862 0.32543-4.9758-0.077-6.4799-0.85108-3.1813-3.2688-6.291-6.039-7.7675-3.8111-2.0313-9.456-2.0295-13.272 5e-3 -5.9828 3.1888-8.1556 11.089-4.7878 17.408 2.6995 5.0648 8.3611 7.3754 14.738 6.015z" fill="#f0f0f0" stroke-width=".025526"/></g><g transform="matrix(.069892 0 0 -.069892 44.236 474.48)"><path d="m2787 4669c-124-65-123-255 3-319 86-44 196-16 247 62 58 87 26 211-67 258-51 26-132 26-183-1z" fill="#00b6f0" stroke="#00b6f0" stroke-width="4.25"/><path d="m2882 4108c-12-16-63-166-102-303-30-104-101-350-165-565-20-69-58-199-85-290-26-91-64-221-85-290-20-69-58-199-85-290-26-91-64-221-85-290-20-69-57-195-81-280-59-207-93-299-115-310-10-6-35-10-56-10-73 0-84-8-81-54l3-41 228-3 228-2-3 47-3 48-73 3c-66 3-74 5-84 27-13 28 0 104 37 225 13 41 47 156 75 255s66 230 85 290c18 61 56 191 85 290 28 99 66 230 85 290 18 61 56 191 85 290 85 297 123 419 131 429 5 5 17-11 28-35 10-24 192-393 403-819s447-902 523-1058l139-282h168c92 0 168 4 168 8s-75 158-166 342c-588 1183-969 1958-1033 2100-29 63-69 151-89 195-44 95-58 110-80 83z" fill="#575757"/>
+                   </svg>`
+        },
+        {
+            url: `https://www.youtube.com/`,
+            search: `results?search_query=`,
+            name: `Youtube`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="YouTube"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <path d="m427,169c-4-15-17-27-32-31-34-9-239-10-278,0-15,4-28,16-32,31-9,38-10,135 0,174 4,15 17,27 32,31 36,10 241,10 278,0 15-4 28-16 32-31 9-36 9-137 0-174zm-207,140v-106l93,53z" fill="#ed1d24"/>
+                   </svg>`
+        },
+        {
+            url: `https://vimeo.com/`,
+            search: `search?q=`,
+            name: `Vimeo`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Vimeo"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="#1eb8eb"/>
+                        <path d="m73 195c0 0 59-71 104-79 47-10 47 73 59 118 11 45 18 70 27 70s29-24 49-63c21-37-1-71-41-47 17-95 166-118 147-9s-128 202-161 223-62-9-73-30c-12-26-49-164-59-176s-39 12-39 12z" fill="#fff"/>
+                   </svg>`
+        },
+        {
+            url: `https://soundcloud.com/`,
+            search: `search?q=`,
+            name: `SoundCloud`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="SoundCloud"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="#f50"/>
+                        <path d="m59 270-3 22 3 22c0 2 3 2 3 0l3-22-3-22c0-3-3-3-3 0zm18-14c0-3-3-3-3 0l-5 36 4 35c0 3 4 3 4 0l4-35zm59-30-3 66 2 40c0 8 7 8 7 0l4-40-4-66c0-5-6-5-6 0zm-31 22-4 44 3 40c0 6 5 6 5 0l4-40-4-44c0-3-4-3-4 0zm70 84 3-40-3-88c0-6-7-6-7 0l-3 88 2 40c0 8 8 8 8 0zm68 0 2-40-2-102c0-7-10-7-10 0l-2 102 2 40c0 8 10 8 10 0zm-34 0 3-40-3-89c0-6-9-6-9 0l-2 89 2 40c0 8 9 8 9 0zm-83 0 3-40-3-41c0-3-6-3-6 0l-3 41 3 40c0 7 6 7 6 0zm-33 0 4-40-4-43c0-3-4-3-4 0l-4 43 4 40c0 4 4 4 4 0zm124-125-2 85 1 40c0 8 10 8 10 0l2-40-2-85c0-7-9-7-9 0zm-58 125 3-40-3-81c0-6-7-6-7 0l-3 81 2 40c0 8 8 8 8 0zm33 0 3-40-3-91c0-6-8-6-8 0l-3 91 3 40c0 8 8 8 8 0zm196-89c-5-57-64-94-118-73-4 2-5 3-5 6v156c0 3 2 6 5 6h137c27 0 49-22 49-49 0-37-35-57-68-46zm-138-62-3 111 3 40c0 8 10 8 10 0l3-40-3-111c0-7-10-7-10 0z" fill="#fff"/>
+                   </svg>`
+        },
+        {
+            url: `https://podcasts.google.com/`,
+            search: `search/`,
+            name: `Google Podcasts`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Google Podcasts"
+                   role="img"
+                   viewBox="0 0 512 512"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   stroke-width="43">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <path stroke="#fab908" d="m256 109v22m0 64v122m0 64v22"/>
+                        <path stroke="#ea4335" d="m181 176v75m0 64v21"/>
+                        <path stroke="#34a853" d="m331 176v21m0 64v75"/>
+                        <path stroke="#4285f4" d="m405 245v22"/>
+                        <path stroke="#0066d9" d="m107 245v22"/>
+                   </svg>`
+        },
+        {
+            url: `https://wikipedia.org/`,
+            search: `w/index.php?fulltext=1&search=`,
+            name: `Wikipedia`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Wikipedia"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <path data-fg-fill="#000000" d="m65 152v8c0 2 1 3 4 3 20 1 20 5 28 23l90 196c7 14 16 16 25-1l45-88 42 88c8 15 16 16 24 0l86-194c8-17 19-24 36-24 2 0 2-1 2-3v-8h-80l-1 1v7c0 2 2 3 4 3 10 0 29 2 21 19l-70 166-3-1-43-88 37-72c8-15 10-24 25-24 2 0 4-1 4-3v-7l-1-1h-64l-1 1v7c0 3 4 3 7 3 18 1 16 8 10 19l-27 56-25-52c-9-16-11-21 2-22 3-1 8-1 8-4v-7l-1-1h-69l-1 1v8c0 2 2 2 5 2 12 2 12 3 23 26l40 84-37 75-3-1-76-167c-8-17 2-16 18-17 3 0 3-1 3-3v-7l-1-1z"/>
+                   </svg>`
+        },
+        {
+            url: `https://archive.org/`,
+            search: `search?query=`,
+            name: `Internet Archive`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Internet Archive"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <path data-fg-fill="#000000" d="m81 419h350v18h-350zm14-34h323v25h-323zm-2-284h321v35h-321zm319-10 10-11-169-39-168 39 10 11h158zm-273 154-1-51-3-47c0-2 0-2-2-2a67 67 0 0 0 -28 0c-1 0-2 0-2 2l-2 47a2223 2223 0 0 0 0 127l2 43 1 8 15 3c6-1 11-1 16-3l1-8 2-43a1616 1616 0 0 0 1-76zm88 0-2-51-2-47c0-2-1-2-2-2a67 67 0 0 0 -28 0c-2 0-2 0-2 2l-3 47a2223 2223 0 0 0 0 127l2 43 1 8c5 2 11 2 16 3l16-3v-8l2-43a1620 1620 0 0 0 2-76zm101 0-1-51-3-47c0-2 0-2-2-2a67 67 0 0 0 -28 0c-1 0-2 0-2 2l-2 47a2223 2223 0 0 0 0 127l2 43 1 8 15 3c5-1 11-1 16-3l1-8 2-43a1624 1624 0 0 0 1-76zm85 0-1-51-2-47c0-2-1-2-2-2a67 67 0 0 0 -29 0l-1 2-3 47a2227 2227 0 0 0 0 127l2 43 1 8c5 2 10 2 16 3l15-3 1-8 2-43a1620 1620 0 0 0 1-76z"/>
+                   </svg>`
+        },
+        {
+            url: `https://medium.com/`,
+            search: `search?q=`,
+            name: `Medium`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Medium"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <path data-fg-fill="#000000" d="m280.6 255a108.3 109 0 100 2m10.5 0a54.1 102.7 0 100-2m118.9 0a19 92 0 110 2"/>
+                   </svg>`
+        },
+        {
+            url: `https://www.goodreads.com/`,
+            search: `search?query=`,
+            name: `Goodreads`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Goodreads"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="#ece9d4"/>
+                        <path d="m253 309c67 0 91-52 91-103s-22-113-89-113-90 60-90 110 23 106 88 106m123 8c0 114-68 129-118 130s-114-21-117-81h33c19 45 69 64 112 49s52-41 55-116c-56 65-158 45-190-13s-25-141 14-183 125-61 176 8v-37h35" fill="#814910"/>
+                   </svg>`
+        },
+        {
+            url: `https://dev.to/`,
+            search: `search?q=`,
+            name: `dev.to`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="dev.to"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path data-bg-fill="#000000" d="m0 0H512V512H0"/>
+                        <path data-fg-fill="#ffffff" d="m140.5 203.9h-17.4v104.5h17.4c10.2-0.5 17.4-8.7 17.5-17.4v-69.7c-0.7-10.4-7.8-17.3-17.5-17.4zm45.7 87.2c0 18.8-11.6 47.3-48.4 47.2h-46.4v-165.3h47.4c35.4 0 47.4 28.5 47.4 47.3zm100.7-88.7h-53.3v38.4h32.6v29.6h-32.6v38.4h53.3v29.6h-62.2c-11.2 0.3-20.4-8.5-20.7-19.7v-125c-0.3-11.2 8.6-20.4 19.7-20.7h63.2zm103.6 115.3c-13.2 30.8-36.9 24.6-47.4 0l-38.5-144.8h32.6l29.7 113.7 29.6-113.7h32.6z" fill="#fff"/>
+                   </svg>`
+        },
+        {
+            url: `https://www.npmjs.com/`,
+            search: `search?q=`,
+            name: `npm`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="npm"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <rect width="512" height="512" fill="#d00000"/>
+                        <polygon transform="matrix(19.929 0 0 19.929 -16.236 -21.019)" points="13.67 9.98 17.59 9.98 17.58 21.76 21.51 21.76 21.52 6.06 5.82 6.04 5.8 21.75 13.66 21.75" fill="#fff"/>
+                   </svg>`
+        },
+        {
+            url: `https://github.com/`,
+            search: `search?q=`,
+            name: `GitHub`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="GitHub"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="#181717"/>
+                        <path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-44c-71 16-86-34-86-34-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/>
+                   </svg>`
+        },
+        {
+            url: `https://codeberg.org/`,
+            search: `explore/repos?q=`,
+            name: `Codeberg`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Codeberg"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <linearGradient id="3" x2=".2" y2="1">
+                            <stop offset=".16" stop-color="#fff"/>
+                            <stop offset=".54" stop-color="#b8e1ff"/>
+                            <stop offset="1" stop-color="#9cd4ff"/>
+                        </linearGradient>
+                        <path fill="url(#3)" d="M332 440.2a192 192 0 0086.8-74.4L256 156"/>
+                        <path fill="#2185d0" d="m418.6 365.8a192 192 0 10-325.3 0l160.1-207a3 3 0 015.2 0"/>
+                   </svg>`
+        },
+        {
+            url: `https://codepen.io/`,
+            search: `search/pens?q=`,
+            name: `CodePen`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="CodePen"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path data-bg-fill="#000000" d="m0 0H512V512H0"/>
+                        <path data-fg-stroke="#ffffff" fill="none" stroke="#fff" stroke-width="33" stroke-linejoin="round" d="M256 314 431 198 256 81 81 198ZV431L431 314 256 198 81 314 256 431M81 198V314m350 0V198m-175 0V81"/>
+                   </svg>`
+        },
+        {
+            url: `https://dribbble.com/`,
+            search: `search/`,
+            name: `Dribble`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Dribble"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <g fill="none" stroke="#c32361" stroke-width="28">
+                            <circle cx="256" cy="256" r="178" fill="#ea4c89"/>
+                            <path d="m79 237s225 11 305-105m49 142c-94-33-222-16-296 115"/>
+                            <path stroke-width="32" d="M192 90c78 100 127 206 145 324"/>
+                        </g>
+                   </svg>`
+        },
+        {
+            url: `https://www.behance.net/`,
+            search: `?search=`,
+            name: `Behance`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Behance"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="#4175fa"/>
+                        <path d="m346.1 211.9c-73.4 0-73.5 73.1-73.5 73.5 0 0-5 73.2 73.5 73.2 0 0 65.5 3.7 65.5-50.9h-33.6s1.1 20.6-30.7 20.6c0 0-33.6 2.2-33.6-33.2h99.1s10.9-83.1-66.6-83.1zm-32.9 57.5s4.1-29.4 33.6-29.4c29.6 0 29.1 29.4 29.1 29.4h-62.8zm-84-18.8s29.1-2.1 29.1-36.4c0-34.2-23.8-50.9-54.1-50.9h-99.6v191.4h99.5s60.8 1.9 60.8-56.5c0 0 2.6-47.5-35.8-47.5zm-80.6-53.4h55.7s13.5 0 13.5 19.9-7.9 22.8-16.9 22.8h-52.2v-42.7zm52.9 123.4h-52.9v-51.2h55.7s20.2-0.2 20.1 26.4c0 22.4-15 24.7-22.9 24.9zm103.5-146.1v23.6h79v-23.6h-79z" fill="#fff"/>
+                   </svg>`
+        },
+        {
+            url: `https://www.deviantart.com/`,
+            search: `search?q=`,
+            name: `DeviantArt`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="DeviantArt"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="#232b31"/>
+                        <path fill="#00e49b" d="m358 151V91h-60l-6 6-28 54-9 6H154v82h56l5 6-57 110-3 6v60h60l6-6 28-54 9-6h100v-82h-56l-5-6"/>
+                   </svg>`
+        },
+        {
+            url: `https://www.flickr.com/`,
+            search: `search/?text=`,
+            name: `Flickr`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Flickr"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <circle cx="157" cy="256" fill="#0063dc" r="79"/>
+                        <circle cx="355" cy="256" fill="#ff0084" r="79"/>
+                   </svg>`
+        },
+        {
+            url: `https://unsplash.com/`,
+            search: `s/photos/`,
+            name: `Unsplash`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Unsplash"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <rect width="512" height="512" fill="currentColor"/>
+                        <path data-fg-fill="#000000" d="M83.437,75.094V0H183.562V75.094Zm100.125,41.719H267V267H0V116.813H83.437v75.094H183.562Z" transform="translate(123 123)"/>
+                   </svg>`
+        },
+        {
+            url: `https://www.pexels.com/`,
+            search: `search/`,
+            name: `Pexels`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Pexels"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <g transform="translate(-3894 2762)">
+                            <rect width="512" height="512" transform="translate(3894 -2762)" fill="#07a081"/>
+                            <path d="M66.591,245.524H139.2V175.943H161.1a57.928,57.928,0,1,0,0-115.855h-94.5ZM176.8,282.613H29V23.009H161.1a94.935,94.935,0,0,1,15.667,188.774Z" transform="translate(4018.6 -2662.129)" fill="#fff"/>
+                        </g>
+                   </svg>`
+        },
+        {
+            url: `https://uimg.studio/`,
+            search: `?s=`,
+            name: `uimg.studio`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="uimg.studio"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <rect width="512" height="512" fill="currentColor"/>
+                        <g data-fg-fill="#000000" transform="translate(115.186 115.387)">
+                            <path d="M3.668,0,0,3.668,44.925,55.141a129.85,129.85,0,0,1,0,170.762L0,277.376l3.668,3.668,51.473-44.925a129.85,129.85,0,0,1,170.762,0l51.473,44.925,3.668-3.668L236.119,225.9a129.85,129.85,0,0,1,0-170.762L281.043,3.668,277.376,0,225.9,44.925a129.85,129.85,0,0,1-170.762,0Zm85.88,90.636a93.863,93.863,0,0,0,100.108,0,93.861,93.861,0,0,0,0,100.1,93.863,93.863,0,0,0-100.108,0,93.851,93.851,0,0,0,0-100.1Z" transform="translate(0 0.056)" fill-rule="evenodd"/>
+                        </g>
+                   </svg>`
+        },
+        {
+            url: `https://f-droid.org/`,
+            search: `https://search.f-droid.org/?q=`,
+            name: `F-Droid`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="F-Droid"
+                   role="img"
+                   viewBox="0 0 512 512"
+                   fill="currentColor">
+                        <path d="m0 0H512V512H0"/>
+                        <g transform="translate(104 108)">
+                            <g id="4a">
+                                <path fill="#681" d="m-27-34q-5 7 2 15L2 16h7"/>
+                                <path fill="#9b0" d="M18 4-9-31q-8-11-17-4c-5 5-3 6 30 47"/>
+                            </g>
+                            <use xlink:href="#4a" transform="matrix(-1 0 0 1 304 0)"/>
+                            <rect fill="#c6f04c" width="304" height="48" rx="24"/>
+                            <rect y="56" fill="#93c50b" width="304" height="48" rx="24"/>
+                            <rect y="8" fill="#aeea00" width="304" height="88" rx="24" ry="20"/>
+                            <rect y="112" fill="#4791db" width="304" height="48" rx="24"/>
+                            <rect y="272" fill="#1c68b3" width="304" height="48" rx="24"/>
+                            <rect y="120" fill="#1976d2" width="304" height="192" rx="24" ry="22"/>
+                            <g id="4b">
+                                <ellipse cx="75" cy="53" rx="27" ry="31" fill="#93c50b"/>
+                                <circle cx="75" cy="57" r="27"/>
+                            </g>
+                            <use xlink:href="#4b" x="156"/>
+                            <path fill="#0d47a1" d="m68 217a84 84 0 100-2m15 0a69 69 0 110 2m21-13a50 50 0 110 24h25a26 26 0 100-24"/>
+                        </g>
+                   </svg>`
+        },
+        {
+            url: `https://store.steampowered.com/`,
+            search: `search/?term=`,
+            name: `Steam`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Steam"
+                   role="img"
+                   viewBox="0 0 512 512"
+                   fill="#ebebeb">
+                        <path d="m0 0H512V512H0" fill="#231f20"/>
+                        <path d="m183 280 41 28 27 41 87-62-94-96"/>
+                        <circle cx="340" cy="190" r="49"/>
+                        <g fill="none" stroke="#ebebeb">
+                            <circle cx="179" cy="352" r="63" stroke-width="19"/>
+                            <path d="m-18 271 195 81" stroke-width="80" stroke-linecap="round"/>
+                            <circle cx="340" cy="190" r="81" stroke-width="32"/>
+                        </g>
+                   </svg>`
+        },
+        {
+            url: `https://stackoverflow.com/`,
+            search: `search?q=`,
+            name: `Stack Overflow`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Stack Overflow"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="#f58025"/>
+                        <path stroke="#fff" stroke-width="30" fill="none" d="m293 89 90 120m-28 27-115-97m-41 65 136 64m-11 36-148-31m-6 68h150m46-44V402H125V297"/>
+                   </svg>`
+        },
+        {
+            url: `https://stackexchange.com/`,
+            search: `search?q=`,
+            name: `Stack Exchange`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Stack Exchange"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <path fill="#91d8f4" d="m156,71q-50,0 -50,50v16h300v-16q0,-50 -50,-50"/>
+                        <path fill="#4ca2da" d="m106,157v60h300v-60"/>
+                        <path fill="#376db6" d="m106,239v60h300v-60"/>
+                        <path fill="#1e5397" d="M406,319H106v16q0,50 50,50h123v65l65,-65h12q50,0 50,-50"/>
+                   </svg>`
+        },
+        {
+            url: `https://www.freecodecamp.org/`,
+            search: `news/search/?query=`,
+            name: `freeCodeCamp`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="freeCodeCamp"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <path data-fg-fill="#000000" d="M377 129c-2 0-3 3-3 4 0 3 4 8 11 16 29 28 45 62 44 103 0 46-17 84-47 111-6 6-9 10-9 15l4 4a9 9 0 0 0 5 4c7 0 17-8 29-25 25-30 36-63 37-109 0-46-13-77-42-109-10-11-18-17-24-17-2 0-4 1-5 3zm-88 131c-11-2 33-56-47-119 0 0 11 33-42 108-52 75 23 118 23 118s-36-19 7-87c7-11 17-22 29-49 0 0 11 16 5 48-9 50 36 37 37 37 16 18-13 51-14 52s81-51 22-128c-4 5-10 23-21 20zm-154-131a7 7 0 0 1 3 4c0 3-3 8-12 16a138 138 0 0 0-43 103c0 46 16 82 46 111 7 6 9 11 9 14l-3 5a9 9 0 0 1-5 4c-8 0-17-9-30-25a165 165 0 0 1-36-109c0-46 13-77 41-109 11-11 19-17 25-17 2 0 4 1 5 3z"/>
+                   </svg>`
+        },
+        {
+            url: `https://www.amazon.com/`,
+            search: `s?k=`,
+            name: `Amazon`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Amazon"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="#f90"/>
+                        <path fill="#fff" d="M283 187c-62 2-121 19-121 81 0 43 26 64 61 64 31 0 51-12 68-30 8 11 10 16 24 27q5 3 10-1l31-27q4-4 0-10c-7-11-15-19-15-39v-64c0-27 2-52-18-70-17-16-38-20-62-21-53-1-88 28-93 62q-1 8 7 9l37 5c6 1 9-4 10-8 6-22 29-28 43-23 20 6 18 29 18 45m-36 105c-15 0-25-13-25-30 1-36 29-42 61-42v18c0 32-17 54-36 54m168 106c13-11 26-38 25-57 0-7-1-8-8-10-13-4-46-5-62 10-3 3-2 5 1 5 11-2 45-6 50 2 4 7-8 35-12 47-2 5 2 6 6 3M58 342c96 91 247 94 345 25 7-4 0-12-6-9A376 376 0 0162 337c-4-3-8 2-4 5"/>
+                   </svg>`
+        },
+        {
+            url: `https://www.ebay.com/`,
+            search: `sch/i.html?_nkw=`,
+            name: `eBay`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="eBay"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <path fill="#e53238" d="M98 208c-30 0-55 12-55 51 0 31 17 49 56 49 46 0 49-30 49-30h-23s-4 17-28 17c-19 0-32-13-32-31h85v-12c0-17-11-44-52-44zm-1 14c18 0 30 11 30 28H65c0-18 16-28 32-28z"/>
+                        <path fill="#0064d2" d="M150 171v119l-1 16h22l1-14s10 17 39 17c30 0 50-21 50-51 0-28-18-50-50-50-31 0-39 16-39 16v-53zm55 52c21 0 33 15 33 35 0 22-15 36-33 36-22 0-33-17-33-35s10-36 33-36z"/>
+                        <path fill="#f5af03" d="M314 208c-46 0-48 25-48 28h22s2-14 24-14c31 0 27 24 27 24h-27c-35 0-53 11-53 31s17 32 40 32c32 0 41-17 41-17l1 14h20v-62c0-30-25-36-47-36zm25 52s4 35-35 35c-16 0-23-8-23-18 0-17 24-17 58-17z"/>
+                        <path fill="#86b817" d="M348 212h25l37 72 36-72h23l-65 129h-24l18-36z"/>
+                   </svg>`
+        },
+        {
+            url: `https://www.etsy.com/`,
+            search: `search?q=`,
+            name: `Etsy`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Etsy"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <path fill="#f2521b" d="M218 137q0-6 8-6h94q23 0 31 40l5 20h16q3-67 5-86-41 5-64 5H194l-64-2v17l22 4c16 2 19 6 20 20q2 108 0 216c0 12-5 17-20 19l-22 4v17l64-2h107q31 0 81 2 5-44 11-89h-16l-16 36c-13 29-31 30-52 30h-61q-30 0-30-25v-93q43 0 60 1 18 0 22 20l5 22h18l-1-53 2-54h-18l-6 24c-4 16-6 18-22 20q-17 2-60 1z"/>
+                   </svg>`
+        },
+        {
+            url: `https://www.quora.com/`,
+            search: `search?q=`,
+            name: `Quora`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Quora"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="#b92b27"/>
+                        <path d="M412.9 386a18 18 0 01-12.5 30.4l-146-.1a163 163 0 11128.8-59.8zM354 253.5a1 1 0 00-195 0 1 1 0 00195 0z" fill="#fff"/>
+                   </svg>`
+        },
+        {
+            url: `https://www.udemy.com/`,
+            search: `courses/search/?q=`,
+            name: `Udemy`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Udemy"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <path fill="#a435f0" d="M256 121.5l-94.5 57v-57l94.5-57 94.5 57v57z"/>
+                        <path data-fg-fill="#000000" d="M161.5 226.5h49.5V352a45 49 0 0090 0V226.5h49.5V356a94.5 91.5 0 01-189 0z"/>
+                   </svg>`
+        }
+    ]

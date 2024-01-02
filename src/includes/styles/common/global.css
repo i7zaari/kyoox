@@ -1,0 +1,112 @@
+:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 15px;
+}
+
+::selection {
+    background-color: var(--default-selection-background);
+    color: var(--accent);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: var(--primary-foreground);
+    background-color: var(--primary-background);
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    color: var(--primary-foreground);
+    text-decoration-line: none;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+button svg {
+    height: 100%;
+    width: 100%;
+}
+
+input {
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    background-color: var(--secondary-background);
+    caret-color: var(--accent);
+}
+
+input::placeholder {
+    color: var(--secondary-foreground);
+    opacity: 1;
+    transition: opacity 250ms ease-in-out;
+}
+
+input:hover::placeholder {
+    opacity: 0.75;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+noscript p {
+    color: var(--error);
+    position: relative;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+noscript p::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: -30px;
+    top: 2px;
+    background: url("data-url:/src/images/icons/static/noscript-error.svg") no-repeat center / cover;
+}
+
+noscript *::selection {
+    background-color: var(--error-selection-background);
+    color: var(--error);
+}
+
+.hidden-overflow {
+    overflow: hidden;
+}

@@ -1,0 +1,53 @@
+extends /layouts/default
+
+block style
+    include /includes/styles/animations/shake.css
+    include /includes/styles/pages/index.css
+
+block body
+    main
+        section.search#search
+            div
+                button(
+                    class="toggle"
+                    aria-label="Show or hide search engines and websites section"
+                    aria-controls="sew"
+                    aria-expanded="false"
+                )
+                    include /images/icons/dynamic/plus.svg
+                form
+                    input(
+                        type="search"
+                        placeholder="Type once, Search everywhere..."
+                        title="Type once, Search everywhere..."
+                        spellcheck="false"
+                        autocapitalize="off"
+                        minlength="1"
+                        required
+                    )
+                    button(
+                        class="submit"
+                        aria-label="Search"
+                    )
+                        include /images/icons/dynamic/magnifier.svg
+            div
+                noscript
+                    p JavaScript is disabled!
+        section.sew#sew
+            ul
+                include /includes/data/engines
+                include /includes/data/websites
+                each element in [...engines, ...websites]
+                    li
+                        a(
+                            href=element.url
+                            data-search=element.search
+                            title=element.name
+                            draggable="false"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ) !{element.icon}
+    footer
+        small #[a(href="https://github.com/i7zaari/kyoox/" target="_blank" rel="noopener noreferrer" translate="no") KyooX] was designed and built by #[a(href="https://github.com/i7zaari/" target="_blank" rel="noopener noreferrer" translate="no") @i7zaari]
+    script
+        include /includes/scripts/index.js

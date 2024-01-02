@@ -1,0 +1,102 @@
+block head
+    -
+        let favicon = "/src/images/icons/static/favicon-default.svg"
+        let title = "KyooX"
+        let description = "Type once, Search everywhere..."
+        let url = "https://i7zaari.github.io/kyoox"
+        let pathname = "/"
+        let image = "/src/images/preview/default.png" //- Open Graph Image
+
+<!-- Last Built: #{new Date().toUTCString()} -->
+
+doctype
+html(
+    lang="en"
+)
+    head
+        meta(
+            charset="UTF-8"
+        )
+        meta(
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        )
+        meta(
+            name="theme-color"
+            media="(prefers-color-scheme: light)"
+            content="#FFFFFF"
+        )
+        meta(
+            name="theme-color"
+            media="(prefers-color-scheme: dark)"
+            content="#000000"
+        )
+        link(
+            rel="icon"
+            href=`data-url:${favicon}`
+        )
+        link(
+            rel="canonical"
+            href=url+pathname
+        )
+        title #{title}
+        meta(
+            name="description"
+            content=description
+        )
+        meta(
+            name="author"
+            content="Hamza Zaari"
+        )
+        meta(
+            property="og:url"
+            content=url+pathname
+        )
+        meta(
+            property="og:type"
+            content="website"
+        )
+        meta(
+            property="og:image"
+            content=image
+        )
+        meta(
+            property="og:title"
+            content=title
+        )
+        meta(
+            property="og:description"
+            content=description
+        )
+        meta(
+            name="twitter:url"
+            content=url+pathname
+        )
+        meta(
+            name="twitter:card"
+            content="summary_large_image"
+        )
+        meta(
+            name="twitter:image"
+            content=image
+        )
+        meta(
+            name="twitter:title"
+            content=title
+        )
+        meta(
+            name="twitter:description"
+            content=description
+        )
+        if pathname === "/404"
+            meta(
+                http-equiv="refresh"
+                content="0; url=/"
+            )
+        style
+            include /includes/styles/common/fonts.css
+            include /includes/styles/common/schemes.css
+            include /includes/styles/common/global.css
+            block style
+    body
+        block body
