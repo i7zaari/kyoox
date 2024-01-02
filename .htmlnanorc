@@ -1,0 +1,14 @@
+{
+    "removeComments": false,
+    "minifySvg": {
+        "plugins": [{
+            "name": "preset-default",
+            "params": {
+                "overrides": {
+                    "cleanupIds": false,
+                    "removeViewBox": false
+                }
+            }
+        }]
+    }
+}

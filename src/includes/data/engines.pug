@@ -1,0 +1,148 @@
+-
+    const engines = [
+        {
+            url: `https://duckduckgo.com/`,
+            search: `?q=`,
+            name: `DuckDuckGo`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="DuckDuckGo"
+                   role="img"
+                   viewBox="-128 -128 256 256"
+                   fill="#fff">
+                        <path d="m-128 -128H128V128H-128" fill="#d53"/>
+                        <circle r="108" fill="#d53"/>
+                        <circle r="96" fill="none" stroke="#fff" stroke-width="7"/>
+                        <path d="M-32-55C-62-48-51-6-51-6l19 93 7 3M-39-73h-8l11 4s-11 0-11 7c24-1 35 5 35 5" fill="#ddd"/>
+                        <path d="M25 95S1 57 1 32c0-47 31-7 31-44S1-58 1-58c-15-19-44-15-44-15l7 4s-7 2-9 4 19-3 28 5c-37 3-31 33-31 33l21 120"/>
+                        <path d="M25-1l38-10c34 5-29 24-33 23C0 7 9 32 45 24s9 20-24 9C-26 20-1-3 25-1" fill="#fc0"/>
+                        <path d="M15 78l2-3c22 8 23 11 22-9s0-20-23-3c0-5-13-3-15 0-21-9-23-12-22 2 2 29 1 24 21 14" fill="#6b5"/>
+                        <path d="M-1 67v12c1 2 17 2 17-2s-8 3-13 1-2-13-2-13" fill="#4a4"/>
+                        <path d="M-23-32c-5-6-18-1-15 7 1-4 8-10 15-7m32 0c1-6 11-7 14-1-4-2-10-2-14 1m-33 16a2 2 0 1 1 0 1m-8 3a7 7 0 1 0 0-1m52-6a2 2 0 1 1 0 1m-6 3a6 6 0 1 0 0-1" fill="#148"/>
+                   </svg>`
+        },
+        {
+            url: `https://www.ecosia.org/`,
+            search: `search?q=`,
+            name: `Ecosia`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Ecosia"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <path fill="#008009" d="m45 204.7h62.7v32.7H68.8v12.3H94v12.5H68.8v12.4h38.9v32.6H45m136.6-8.4c-6 6.6-17 10.7-27 10.7s-40 0-40-53.5 30-53.5 40-53.5 21 4 27 10.6v33.7c-18-11-43.3-13-43.3 9.5s25 19.4 43.3 9m7.9-9.3c0 40 15 53.5 39 53.5s39.1-13.5 39.1-53.5-15.2-53.5-39.1-53.5-39 13.5-39 53.5h23.7c0-11 4-18.6 15.3-18.6s15.4 7.6 15.4 18.6-4 18.6-15.4 18.6-15.3-8-15.3-18.6m61.8 8.8c23 12 40 12.3 40 4s-18-8-32-18.4q-9.4-7-9.4-20.6t9.6-21c11.7-9 39-8.4 52.5 2.3v33.1c-23-9-36.7-8.6-36.6-1s18 8 32 17.8q9.9 7 10.4 17t-2.1 16c-8 19-40 19.3-64.3 7.8m74 5.5V204.7h29.7v102.6m7.2 0h28l13.5-84.8 13.5 84.8h28l-17.8-102.5h-47.3m32 66.2h-19v12.7h21"/>
+                   </svg>`
+        },
+        {
+            url: `https://search.brave.com/`,
+            search: `search?q=`,
+            name: `Brave`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Brave"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <linearGradient id="1">
+                            <stop offset="0" stop-color="#f50"/>
+                            <stop offset="1" stop-color="#f20"/>
+                        </linearGradient>
+                        <path d="M416 158l9-23c-24-25-33-43-72-34l-35-40H194l-35 40c-38-3-45 6-72 34l10 23-12 34 39 150c8 32 14 45 37 61l72 49c7 4 16 12 23 12 8 0 16-8 23-12l72-49c23-16 29-29 37-61l40-150" fill="url(#1)"/>
+                        <path d="M343 127s45 54 45 66c-3 21-30 42-45 57-17 16 6 35-3 51-6 12-17 20-24 19-15-8-53-21-55-40 2-18 42-22 44-36 0-13-18-31-17-44 8-14 44-24 59-29 2-2 2-3-6-3-17-2-52-3-66 8-4 16 17 68 4 71-19 5-26 3-45 0-13-8 11-52 3-71-19-12-45-11-66-8-7 0-8 1-6 3 14 7 57 14 59 29 1 17-17 29-17 44 7 15 43 20 45 35-7 20-38 36-55 41-7 1-18-7-25-19-10-20 14-38-3-51-13-15-45-41-45-57 0-12 45-66 45-66l43 7c5 0 17-5 27-8s17-3 17-3 7 0 17 3 22 8 27 8l43-7m-35 216-52 39c-18-12-37-28-52-39-8-9 13-15 22-20 10-5 20-9 30-11 10 3 20 6 30 11 9 4 30 13 22 20" fill="#fff"/>
+                   </svg>`
+        },
+        {
+            url: `https://www.google.com/`,
+            search: `search?q=`,
+            name: `Google`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Google"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <path fill="#34a853" d="m90 341a192 192 0 00296 59v-48h-62c-53 35-141 22-171-60"/>
+                        <path fill="#4285f4" d="m386 400a140 175 0 0053-179H260v74h102q-7 37-38 57"/>
+                        <path fill="#fbbc02" d="m90 341a208 200 0 010-171l63 49q-12 37 0 73"/>
+                        <path fill="#ea4335" d="m153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55"/>
+                   </svg>`
+        },
+        {
+            url: `https://scholar.google.com/`,
+            search: `scholar?q=`,
+            name: `Google Scholar`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Google Scholar"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="#4285f4"/>
+                        <path fill="#fff" d="M213 111l-107 94h69c5 45 41 64 78 67-7 18-4 27 7 39-43 1-103 26-103 67 4 45 63 54 92 54 38 1 81-19 90-54 4-35-10-54-31-71-23-18-28-28-21-40 15-17 35-27 39-51 2-17-2-28-6-43l45-38-1 16c-3 2-5 6-5 9v103c2 13 22 11 23 0V160c0-3-2-7-5-8v-25l16-16zm58 141c-61 10-87-87-38-99 56-11 83 86 38 99zm-5 73c60 13 61 63 10 78-44 9-82-4-81-30 0-25 35-48 71-48z"/>
+                   </svg>`
+        },
+        {
+            url: `https://search.yahoo.com/`,
+            search: `search?p=`,
+            name: `Yahoo!`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Yahoo!"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="#5f01d1"/>
+                        <g fill="#fff">
+                            <path d="M203 404h-62l25-59-69-165h63l37 95 37-95h62m58 76h-69l62-148h69"/>
+                            <circle cx="303" cy="308" r="38"/>
+                        </g>
+                   </svg>`
+        },
+        {
+            url: `https://www.bing.com/`,
+            search: `search?q=`,
+            name: `Bing`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Bing"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <linearGradient id="2a" x2="0" y2="1">
+                            <stop offset="0" stop-color="#3bc0f6"/>
+                            <stop offset=".5" stop-color="#3693fa"/>
+                            <stop offset="1" stop-color="#1b42d8"/>
+                        </linearGradient>
+                        <linearGradient id="2b">
+                            <stop offset="0" stop-color="#5fe9ff"/>
+                            <stop offset=".5" stop-color="#4bb1f1"/>
+                            <stop offset="1" stop-color="#1440df"/>
+                        </linearGradient>
+                        <radialGradient id="2c" cx="1" cy=".7" r="1">
+                            <stop offset="0" stop-color="#6adfd4"/>
+                            <stop offset=".5" stop-color="#15d2e5"/>
+                            <stop offset="1" stop-color="#36befe"/>
+                        </radialGradient>
+                        <path d="m143 343c0 72 84 124 147 84l62-39c51-32 23-79-6-88l-115 69" fill="url(#2b)"/>
+                        <path d="m167 71c-11-8-24 0-24 11v261c0 38 39 56 67 39l21-13V134q-1-21-22-35" fill="url(#2a)"/>
+                        <path d="m279 186c-13-7-26 7-19 20l26 67q5 9 15 13c43 16 58 15 71 35s6 43-5 55c42-44 37-127-30-160" fill="url(#2c)"/>
+                   </svg>`
+        },
+        {
+            url: `https://www.baidu.com/`,
+            search: `s?wd=`,
+            name: `Baidu`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Baidu"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <path d="m0 0H512V512H0" fill="currentColor"/>
+                        <path d="m131 251c41-9 35-58 34-68-2-17-21-45-48-43-33 3-37 50-37 50-5 22 10 70 51 61m76-82c22 0 40-26 40-58s-18-58-40-58c-23 0-41 26-41 58s18 58 41 58m96 4c31 4 50-28 54-53 4-24-16-52-37-57s-48 29-50 52c-3 27 3 54 33 58m120 41c0-12-10-47-46-47s-41 33-41 57c0 22 2 53 47 52s40-51 40-62m-46 102s-46-36-74-75c-36-57-89-34-106-5-18 29-45 48-49 53-4 4-56 33-44 84 11 52 52 51 52 51s30 3 65-5 65 2 65 2 81 27 104-25c22-53-13-80-13-80" fill="#2319dc"/>
+                        <path d="m214 266v34h-28s-29 3-39 35c-3 21 4 34 5 36 1 3 10 19 33 23h53v-128zm-1 107h-21s-15-1-19-18c-3-7 0-16 1-20 1-3 6-11 17-14h22zm38-70v68s1 17 24 23h61v-91h-26v68h-25s-8-1-10-7v-61z" fill="#fff"/>
+                   </svg>`
+        },
+        {
+            url: `https://yandex.com/`,
+            search: `search/?text=`,
+            name: `Yandex`,
+            icon: `<svg xmlns="http://www.w3.org/2000/svg"
+                   aria-label="Yandex"
+                   role="img"
+                   viewBox="0 0 512 512">
+                        <rect width="512" height="512" fill="#fc3f1d"/>
+                        <path d="M127.3,158.854c13.177,28.858,17.573,38.891,17.573,73.548v45.967H97.813V200.876L9.047,7.813h49.1L127.3,158.854ZM185.326,7.8,127.773,138.6h47.834L233.323,7.8h-48Z" transform="translate(134.953 113.2)" fill="#fff"/>
+                   </svg>`
+        }
+    ]

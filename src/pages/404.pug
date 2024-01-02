@@ -1,0 +1,17 @@
+extends /layouts/default
+
+append head
+    -
+        favicon = "/src/images/icons/static/favicon-error.svg"
+        title = "Page not found"
+        description = "The page you’re looking for can’t be found."
+        pathname = "/404"
+
+block style
+    include /includes/styles/pages/404.css
+
+block body
+    noscript
+        p JavaScript is disabled!
+    script
+        include /includes/scripts/404.js
