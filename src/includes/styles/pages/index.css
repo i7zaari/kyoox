@@ -181,6 +181,24 @@ main {
     pointer-events: initial;
 }
 
+.search .please-enable-pop-ups {
+    text-align: center;
+    color: var(--secondary-foreground);
+    transform: translateY(20px);
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: visibility, opacity;
+    transition-delay: 500ms;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+
+[data-sew-visibility="visible"] .search .please-enable-pop-ups {
+    visibility: visible;
+    opacity: 1;
+}
+
 .sew {
     height: 50%;
     background-color: var(--secondary-background);
