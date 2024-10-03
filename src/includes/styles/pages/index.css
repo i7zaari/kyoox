@@ -57,8 +57,11 @@ main {
 }
 
 .search .toggle[data-selected-sew-elements-length] {
-    /* background-color: transparent; */
     color: var(--secondary-background);
+}
+
+:root:not([data-sew-visibility]) .search .toggle[data-selected-sew-elements-length] {
+    background-color: transparent;
 }
 
 .search .toggle[data-selected-sew-elements-length] svg[aria-label="Plus"] {
